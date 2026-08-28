@@ -1,4 +1,4 @@
 # Task-API-REST-API-para-gerenciamento-de-tarefas
-Mini projeto com node, api rest
+Projeto com node, api rest
 
 src > server.ts
