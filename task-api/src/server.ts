@@ -1,6 +1,7 @@
 import express from "express";
 
 const app = express();
+app.use(express.json());
 
 app.get("/health", (req, res) => {
     
@@ -10,7 +11,7 @@ app.get("/health", (req, res) => {
     });
 });
 
-const task = [
+const tasks = [
     {
         id: 1,
         title: "Estudar Node.js",
@@ -24,7 +25,21 @@ const task = [
 ];
 
 app.get("/tasks", (req, res) => {
-    res.json(task);
+    res.json(tasks);
+});
+
+app.post("/tasks", (req, res) => {
+    const { title } = req.body;
+
+    const newTask = {
+        id: tasks.length + 1,
+        title: title,
+        completed: false
+    };
+
+    tasks.push(newTask);
+
+    res.status(201).json(newTask);
 });
 
 
