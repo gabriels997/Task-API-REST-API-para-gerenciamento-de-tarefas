@@ -1,4 +1,2 @@
-# Task-API-REST-API-para-gerenciamento-de-tarefas
-Projeto com node, api rest
-
-src > server.ts
+# Task-API-REST-CRUD
+CRUD Completo com Node.js, Express e MongoDB
