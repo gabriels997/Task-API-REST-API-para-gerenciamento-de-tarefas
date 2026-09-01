@@ -1,0 +1,10 @@
+Projeto ultilizando CRUD com Node.js, Express e MongoDB
+
+
+Criar o package.json: npm init -y
+Instalar dependencias: npm i
+*express 
+*mongoose(conectar com banco de dados) 
+*dotenv(gerenciar as variaveis do ambiente)
+
+
